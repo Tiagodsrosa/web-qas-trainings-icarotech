@@ -1,0 +1,13 @@
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar vídeos gerados pelo Cypress
+cypress/videos/
+
+# Ignorar capturas de tela geradas pelo Cypress
+cypress/screenshots/
+
+# Ignorar arquivos de configuração temporários
+.DS_Store
+.env
+
