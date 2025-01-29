@@ -23,3 +23,30 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (password, senha) => {
+
+    cy.contains('Automation').should('be.visible')
+
+    cy.contains('Signup / Login').click()
+    cy.contains('Login to your account').should('be.visible')
+
+    cy.fixture('login.json').then((data) => {
+        cy.get(data.elements["username"]).type(data.inputs["username"]);
+        cy.get(data.elements["password"]).type(data.inputs["password"]);
+    });
+
+    cy.get('[data-qa="login-button"]').click()
+    cy.contains('Logged in as').should('be.visible')
+});
+
+Cypress.Commands.add('buscar_produto', () => {
+    cy.contains('Products').click();
+    cy.contains('All Products').should('be.visible');
+
+    //adicionar fixture
+    cy.get('#search_product').type('Fancy Green Top');
+    
+    cy.get('#submit_search').click();
+    cy.contains('Searched Products').should('be.visible');
+    cy.get('h2').contains('Rs. 700');
+});

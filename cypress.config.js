@@ -8,6 +8,6 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber())
     },
     // onde está o teste
-    specPattern: "cypress/e2e/step_definitions/*.feature"
+    //specPattern: "cypress/e2e/step_definitions/*.feature"
   },
 });
