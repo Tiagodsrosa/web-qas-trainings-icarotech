@@ -1,0 +1,35 @@
+{
+    "inputs": {
+        "password": "senhasupersegura",
+        "days": "1",
+        "months": "July",
+        "years": "1991",
+        "first_name": "Tiago",
+        "last_name": "Rosa",
+        "company": "Icaro Tech",
+        "address1": "Endereço 1",
+        "address2": "Endereço 2",
+        "country": "New Zealand",
+        "state": "PR",
+        "city": "Curitiba",
+        "zipcode": "81000-000",
+        "mobile_number": "(41)90000-0000"
+
+    },
+    "elements": {
+        "password": "#password",
+        "days": "#days",
+        "months": "#months",
+        "years": "#years",
+        "first_name": "#first_name",
+        "last_name": "#last_name",
+        "company": "#company",
+        "address1": "#address1",
+        "address2": "#address2",
+        "country": "#country",
+        "state": "#state",
+        "city": "#city",
+        "zipcode": "#zipcode",
+        "mobile_number": "#mobile_number"
+    }
+}

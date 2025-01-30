@@ -1,0 +1,10 @@
+{
+    "inputs": {
+        "username": "Tiago",
+        "email": "desafio.desafiador@modulo2.com"
+    },
+    "elements": {
+        "username": "[data-qa='signup-name']",
+        "email": "[data-qa='signup-email']"
+    }
+}
